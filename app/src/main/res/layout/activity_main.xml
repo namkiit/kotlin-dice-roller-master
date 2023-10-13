@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/dice_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/empty_dice"
+        tools:src="@drawable/dice_1" />
+    <!--
+        - The app namespace in your XML layout file is for attributes that come
+          from either your custom code or from libraries, not from the core Android framework.
+        - The app:srcCompat attribute uses the Android X library to support
+          vector drawables in older versions of Android, back to API level 7.
+     -->
+    <!--
+        - The 'tools' namespace is used when you want to define placeholder content
+          that is only used in the preview or the design editor in Android Studio.
+        - Attributes using the 'tools' namespace are removed when you compile the app.
+     -->
+
+    <Button
+        android:id="@+id/roll_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/roll_label" />
+
+</LinearLayout>
